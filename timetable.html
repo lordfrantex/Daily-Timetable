@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="calender">
+    <button onclick="myf()">CHECK</button>
+    <p id="para"></p>
+       <script>
+        function myf(){
+        var idiot = document.getElementById("calender").value;
+        var lower = idiot.toLowerCase();
+switch(lower){
+    case "monday":
+    let monday = ['CYS 201','MTS 201','CSC 201','CYS 107']
+ document.getElementById("para").innerHTML = `your courses for today are: ${monday} .` 
+ break;
+     case "tuesday":
+     let tuesday = ['BST 209','CYS 107','MTS 205','BST 209'] 
+     document.getElementById("para").innerHTML = tuesday
+     break;
+     case "wednesday":
+     let wednesday = ['PTM 205','CSC 201','CCS201','MTS 201'] 
+ document.getElementById("para").innerHTML = wednesday 
+ break;
+ case "thursday":
+ let thursday = ['PYT 201','HACK 200','CYS 201','MTS 209'] 
+ document.getElementById("para").innerHTML = thursday
+ break;
+ case "friday":
+ let friday = ['MTS 201','CYS 201','CYS 107','JAVA 201'] 
+ document.getElementById("para").innerHTML = friday 
+ break;
+default:
+document.getElementById("para").innerHTML = "input a valid day name"
+        }}
+    </script>
+ 
+</body>
+</html>
